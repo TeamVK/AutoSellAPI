@@ -29,7 +29,7 @@ repositories {
 dependencies {
     // ... other dependencies
     compile group: 'org.spigotmc', name: 'spigot', version: spigot_version
-    compile group: 'me.clip.autosell', name: 'AutoSellAPI', version: '1.2.0'
+    compile group: 'me.clip.autosell', name: 'AutoSellAPI', version: '1.9.3'
     // ... other dependencies
 }
 ```
