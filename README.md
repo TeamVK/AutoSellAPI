@@ -34,6 +34,30 @@ dependencies {
 }
 ```
 
+### Maven
+Here is an example of a fragment of the script you can add to your pom.xml.
+
+```
+    <repositories>
+        <!-- TeamVK -->
+        <repository>
+            <id>teamvk-repo</id>
+            <url>https://raw.githubusercontent.com/TeamVK/maven-repository/master/release/</url>
+        </repository>
+
+    </repositories>
+
+    <dependencies>
+        <!-- MergedSpawner -->
+        <dependency>
+            <groupId>me.clip.autosell</groupId>
+            <artifactId>AutoSellAPI</artifactId>
+            <version>1.9.3</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+```
+
 ## [API Documentation](https://teamvk.github.io/AutoSellAPI/javadoc/index.html)
 
 ## [Donation](http://PayPal.Me/vk2gpz)
