@@ -34,7 +34,7 @@ dependencies {
 }
 ```
 
-## [API Documentation](javadoc/index.html)
+## [API Documentation](http://teamvk.github.io/AutoSellAPI/)
 
 ## [Donation](http://PayPal.Me/vk2gpz)
 It would be greatly appreciated for your donation to continue providing support for this plugin.
