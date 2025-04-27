@@ -5,7 +5,7 @@ Any developers who do not have a copy of AutoSell plugin but wishes to create a 
 
 ## [API Documentation](https://teamvk.github.io/AutoSellAPI/javadoc/index.html)
 
-## [AreaHok Samples](AreaHok/README.md)
+## [AreaHok Samples](AreaHook/README.md)
 
 ## [Donation](http://PayPal.Me/vk2gpz)
 It would be greatly appreciated for your donation to continue providing support for this plugin.
