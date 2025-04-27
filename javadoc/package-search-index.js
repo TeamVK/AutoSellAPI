@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.vk2gpz.autosell"},{"l":"com.vk2gpz.autosell.area"},{"l":"com.vk2gpz.autosell.event"},{"l":"com.vk2gpz.autosell.multiplier"},{"l":"com.vk2gpz.autosell.object"}];updateSearchResults();
