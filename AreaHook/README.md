@@ -11,9 +11,9 @@ import com.vk2gpz.autosell.IAutoSell;
 
 ...
 
-    if (Bukkit.getPluginManager().getPlugin("AutoSell")){
-	    IAreaHook myHook = new MyAreaHook();
-		IAutoSell.getInstance().setAreaHook(myHook);
+    if (Bukkit.getPluginManager().getPlugin("AutoSell")) {
+        IAreaHook myHook = new MyAreaHook();
+        IAutoSell.getInstance().setAreaHook(myHook);
     }
 ```
 
