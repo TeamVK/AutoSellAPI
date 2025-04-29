@@ -99,6 +99,10 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">DropsToInventoryEvent</span>
 <span class="extends-implements">extends org.bukkit.event.Event
 implements org.bukkit.event.Cancellable</span></div>
+<div class="block">This event is called when a player picks up dropped items.
+ It is used to transfer the picked items into player's inventory.
+ <p>
+ This event is cancellable, and if cancelled, the items will not be picked up.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -123,7 +127,9 @@ implements org.bukkit.event.Cancellable</span></div>
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;drops,
  org.bukkit.block.Block&nbsp;block,
  int&nbsp;xp)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a new DropsToInventoryEvent.</div>
+</div>
 </div>
 </section>
 </li>
@@ -140,40 +146,64 @@ implements org.bukkit.event.Cancellable</span></div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.bukkit.block.Block</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBlock()" class="member-name-link">getBlock</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the block that the items were dropped from.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;org.bukkit.inventory.ItemStack&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDrops()" class="member-name-link">getDrops</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the items that were picked up.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static org.bukkit.event.HandlerList</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getHandlerList()" class="member-name-link">getHandlerList</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the handler list for this event.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull org.bukkit.event.HandlerList</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHandlers()" class="member-name-link">getHandlers</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the handler list for this event.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the name of the player.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.bukkit.entity.Player</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPlayer()" class="member-name-link">getPlayer</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the player who picked up the items.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getXp()" class="member-name-link">getXp</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the amount of experience that was dropped.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCancelled()" class="member-name-link">isCancelled</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Checks if the event is cancelled or not.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setBlock(org.bukkit.block.Block)" class="member-name-link">setBlock</a><wbr>(org.bukkit.block.Block&nbsp;block)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the block that the items were dropped from.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCancelled(boolean)" class="member-name-link">setCancelled</a><wbr>(boolean&nbsp;cancelled)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets whether the event is cancelled or not.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setDrops(java.util.List)" class="member-name-link">setDrops</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;drops)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the items that were picked up.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setXp(int)" class="member-name-link">setXp</a><wbr>(int&nbsp;xp)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the amount of experience that was dropped.</div>
+</div>
 </div>
 </div>
 </div>
@@ -201,6 +231,14 @@ implements org.bukkit.event.Cancellable</span></div>
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;drops,
  org.bukkit.block.Block&nbsp;block,
  int&nbsp;xp)</span></div>
+<div class="block">Creates a new DropsToInventoryEvent.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>p</code> - The player who picked up the items.</dd>
+<dd><code>drops</code> - The items that were picked up.</dd>
+<dd><code>block</code> - The block that the items were dropped from.</dd>
+<dd><code>xp</code> - The amount of experience that was dropped.</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -215,12 +253,22 @@ implements org.bukkit.event.Cancellable</span></div>
 <section class="detail" id="getName()">
 <h3>getName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getName</span>()</div>
+<div class="block">Gets the name of the player.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the name of the player.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPlayer()">
 <h3>getPlayer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.bukkit.entity.Player</span>&nbsp;<span class="element-name">getPlayer</span>()</div>
+<div class="block">Gets the player who picked up the items.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the player who picked up the items.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -228,9 +276,12 @@ implements org.bukkit.event.Cancellable</span></div>
 <h3>getHandlers</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlers</span>()</div>
+<div class="block">Gets the handler list for this event.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>getHandlers</code>&nbsp;in class&nbsp;<code>org.bukkit.event.Event</code></dd>
+<dt>Returns:</dt>
+<dd>the handler list for this event.</dd>
 </dl>
 </section>
 </li>
@@ -238,15 +289,23 @@ implements org.bukkit.event.Cancellable</span></div>
 <section class="detail" id="getHandlerList()">
 <h3>getHandlerList</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlerList</span>()</div>
+<div class="block">Gets the handler list for this event.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the handler list for this event.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isCancelled()">
 <h3>isCancelled</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isCancelled</span>()</div>
+<div class="block">Checks if the event is cancelled or not.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isCancelled</code>&nbsp;in interface&nbsp;<code>org.bukkit.event.Cancellable</code></dd>
+<dt>Returns:</dt>
+<dd>Whether the event is cancelled or not.</dd>
 </dl>
 </section>
 </li>
@@ -254,9 +313,12 @@ implements org.bukkit.event.Cancellable</span></div>
 <section class="detail" id="setCancelled(boolean)">
 <h3>setCancelled</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCancelled</span><wbr><span class="parameters">(boolean&nbsp;cancelled)</span></div>
+<div class="block">Sets whether the event is cancelled or not.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>setCancelled</code>&nbsp;in interface&nbsp;<code>org.bukkit.event.Cancellable</code></dd>
+<dt>Parameters:</dt>
+<dd><code>cancelled</code> - </dd>
 </dl>
 </section>
 </li>
@@ -264,36 +326,66 @@ implements org.bukkit.event.Cancellable</span></div>
 <section class="detail" id="getDrops()">
 <h3>getDrops</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;</span>&nbsp;<span class="element-name">getDrops</span>()</div>
+<div class="block">Gets the items that were picked up.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The items that were picked up.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setDrops(java.util.List)">
 <h3>setDrops</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setDrops</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;drops)</span></div>
+<div class="block">Sets the items that were picked up.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>drops</code> - The items that were picked up.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getBlock()">
 <h3>getBlock</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.bukkit.block.Block</span>&nbsp;<span class="element-name">getBlock</span>()</div>
+<div class="block">Gets the block that the items were dropped from.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The block that the items were dropped from.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setBlock(org.bukkit.block.Block)">
 <h3>setBlock</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setBlock</span><wbr><span class="parameters">(org.bukkit.block.Block&nbsp;block)</span></div>
+<div class="block">Sets the block that the items were dropped from.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>block</code> - The block that the items were dropped from.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getXp()">
 <h3>getXp</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getXp</span>()</div>
+<div class="block">Gets the amount of experience that was dropped.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The amount of experience that was dropped.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setXp(int)">
 <h3>setXp</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setXp</span><wbr><span class="parameters">(int&nbsp;xp)</span></div>
+<div class="block">Sets the amount of experience that was dropped.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>xp</code> - The amount of experience that was dropped.</dd>
+</dl>
 </section>
 </li>
 </ul>

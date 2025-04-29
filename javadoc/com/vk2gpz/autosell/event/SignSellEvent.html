@@ -94,6 +94,10 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">SignSellEvent</span>
 <span class="extends-implements">extends org.bukkit.event.Event</span></div>
+<div class="block">This event is called when a player sells items to a sign.
+ It is used to modify the total amount of money earned and the number of items sold.
+ <p>
+ This event is cancellable, and if cancelled, the sale will not be processed.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -120,7 +124,9 @@ loadScripts(document, 'script');</script>
  double&nbsp;totalCost,
  double&nbsp;multiplier,
  <a href="../object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a new SignSellEvent.</div>
+</div>
 </div>
 </section>
 </li>
@@ -137,40 +143,64 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static org.bukkit.event.HandlerList</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getHandlerList()" class="member-name-link">getHandlerList</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the list of handlers for this event.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull org.bukkit.event.HandlerList</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHandlers()" class="member-name-link">getHandlers</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the list of handlers for this event.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;org.bukkit.inventory.ItemStack&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getItemsSold()" class="member-name-link">getItemsSold</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the list of items sold.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMultiplier()" class="member-name-link">getMultiplier</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the multiplier for the sale.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the name of the player.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.bukkit.entity.Player</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPlayer()" class="member-name-link">getPlayer</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the player who sold the items.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getShop()" class="member-name-link">getShop</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the shop that the items were sold to.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTotalCost()" class="member-name-link">getTotalCost</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the total amount of money earned from the sale.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTotalItems()" class="member-name-link">getTotalItems</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the number of items sold.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#hasMultiplier()" class="member-name-link">hasMultiplier</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Checks if there is a multiplier to be applied to.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTotalCost(double)" class="member-name-link">setTotalCost</a><wbr>(double&nbsp;totalCost)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the total amount of money earned from the sale.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTotalItems(int)" class="member-name-link">setTotalItems</a><wbr>(int&nbsp;totalItems)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the number of items sold.</div>
+</div>
 </div>
 </div>
 </div>
@@ -200,6 +230,16 @@ loadScripts(document, 'script');</script>
  double&nbsp;totalCost,
  double&nbsp;multiplier,
  <a href="../object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</span></div>
+<div class="block">Creates a new SignSellEvent.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player who sold the items.</dd>
+<dd><code>sold</code> - The items that were sold.</dd>
+<dd><code>totalItems</code> - The number of items sold.</dd>
+<dd><code>totalCost</code> - The total amount of money earned from the sale.</dd>
+<dd><code>multiplier</code> - The multiplier for the sale.</dd>
+<dd><code>shop</code> - The shop that the items were sold to.</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -214,12 +254,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getName()">
 <h3>getName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getName</span>()</div>
+<div class="block">Gets the name of the player.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The name of the player.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPlayer()">
 <h3>getPlayer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.bukkit.entity.Player</span>&nbsp;<span class="element-name">getPlayer</span>()</div>
+<div class="block">Gets the player who sold the items.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The player who sold the items.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -227,9 +277,12 @@ loadScripts(document, 'script');</script>
 <h3>getHandlers</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlers</span>()</div>
+<div class="block">Gets the list of handlers for this event.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>getHandlers</code>&nbsp;in class&nbsp;<code>org.bukkit.event.Event</code></dd>
+<dt>Returns:</dt>
+<dd>the list of handlers for this event.</dd>
 </dl>
 </section>
 </li>
@@ -237,54 +290,99 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getHandlerList()">
 <h3>getHandlerList</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlerList</span>()</div>
+<div class="block">Gets the list of handlers for this event.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the list of handlers for this event.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getItemsSold()">
 <h3>getItemsSold</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;</span>&nbsp;<span class="element-name">getItemsSold</span>()</div>
+<div class="block">Gets the list of items sold.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The list of items sold.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setTotalItems(int)">
 <h3>setTotalItems</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTotalItems</span><wbr><span class="parameters">(int&nbsp;totalItems)</span></div>
+<div class="block">Sets the number of items sold.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>totalItems</code> - </dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getTotalItems()">
 <h3>getTotalItems</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getTotalItems</span>()</div>
+<div class="block">Gets the number of items sold.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The number of items sold.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setTotalCost(double)">
 <h3>setTotalCost</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTotalCost</span><wbr><span class="parameters">(double&nbsp;totalCost)</span></div>
+<div class="block">Sets the total amount of money earned from the sale.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>totalCost</code> - The total amount of money earned from the sale.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getTotalCost()">
 <h3>getTotalCost</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getTotalCost</span>()</div>
+<div class="block">Gets the total amount of money earned from the sale.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The total amount of money earned from the sale.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getMultiplier()">
 <h3>getMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getMultiplier</span>()</div>
+<div class="block">Gets the multiplier for the sale.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the multiplier for the sale.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="hasMultiplier()">
 <h3>hasMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasMultiplier</span>()</div>
+<div class="block">Checks if there is a multiplier to be applied to.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Whether there is a multiplier to be applied to.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getShop()">
 <h3>getShop</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="../object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></span>&nbsp;<span class="element-name">getShop</span>()</div>
+<div class="block">Gets the shop that the items were sold to.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The shop that the items were sold to.</dd>
+</dl>
 </section>
 </li>
 </ul>

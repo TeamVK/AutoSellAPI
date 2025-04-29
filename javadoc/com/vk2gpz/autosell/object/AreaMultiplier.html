@@ -92,6 +92,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">AreaMultiplier</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents an area multiplier with an identifier, priority, permission, multiplier value, and a list of areas.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,7 +105,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String)" class="member-name-link">AreaMultiplier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructs an AreaMultiplier with the specified identifier.</div>
+</div>
 </div>
 </section>
 </li>
@@ -121,34 +124,54 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAreas()" class="member-name-link">getAreas</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the list of areas associated with this area multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getIdentifier()" class="member-name-link">getIdentifier</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the identifier for this area multiplier.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMultiplier()" class="member-name-link">getMultiplier</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the multiplier value for this area multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPermission()" class="member-name-link">getPermission</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the permission required to use this area multiplier.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPriority()" class="member-name-link">getPriority</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the priority of this area multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setAreas(java.util.List)" class="member-name-link">setAreas</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;areas)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the list of areas associated with this area multiplier.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setIdentifier(java.lang.String)" class="member-name-link">setIdentifier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the identifier for this area multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setMultiplier(double)" class="member-name-link">setMultiplier</a><wbr>(double&nbsp;multiplier)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the multiplier value for this area multiplier.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPermission(java.lang.String)" class="member-name-link">setPermission</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the permission required to use this area multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setPriority(int)" class="member-name-link">setPriority</a><wbr>(int&nbsp;priority)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the priority of this area multiplier.</div>
+</div>
 </div>
 </div>
 </div>
@@ -170,6 +193,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(java.lang.String)">
 <h3>AreaMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">AreaMultiplier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</span></div>
+<div class="block">Constructs an AreaMultiplier with the specified identifier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>identifier</code> - The identifier for this area multiplier.</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -184,60 +212,110 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getIdentifier()">
 <h3>getIdentifier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getIdentifier</span>()</div>
+<div class="block">Gets the identifier for this area multiplier.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the identifier for this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setIdentifier(java.lang.String)">
 <h3>setIdentifier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setIdentifier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;identifier)</span></div>
+<div class="block">Sets the identifier for this area multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>identifier</code> - The identifier for this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPriority()">
 <h3>getPriority</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getPriority</span>()</div>
+<div class="block">Gets the priority of this area multiplier.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the priority of this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setPriority(int)">
 <h3>setPriority</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setPriority</span><wbr><span class="parameters">(int&nbsp;priority)</span></div>
+<div class="block">Sets the priority of this area multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>priority</code> - The priority of this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPermission()">
 <h3>getPermission</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getPermission</span>()</div>
+<div class="block">Gets the permission required to use this area multiplier.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the permission required to use this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setPermission(java.lang.String)">
 <h3>setPermission</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setPermission</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission)</span></div>
+<div class="block">Sets the permission required to use this area multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>permission</code> - The permission required to use this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getMultiplier()">
 <h3>getMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getMultiplier</span>()</div>
+<div class="block">Gets the multiplier value for this area multiplier.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the multiplier value for this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setMultiplier(double)">
 <h3>setMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setMultiplier</span><wbr><span class="parameters">(double&nbsp;multiplier)</span></div>
+<div class="block">Sets the multiplier value for this area multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>multiplier</code> - The multiplier value for this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getAreas()">
 <h3>getAreas</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">getAreas</span>()</div>
+<div class="block">Gets the list of areas associated with this area multiplier.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the list of areas associated with this area multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setAreas(java.util.List)">
 <h3>setAreas</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setAreas</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;areas)</span></div>
+<div class="block">Sets the list of areas associated with this area multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>areas</code> - The list of areas associated with this area multiplier.</dd>
+</dl>
 </section>
 </li>
 </ul>

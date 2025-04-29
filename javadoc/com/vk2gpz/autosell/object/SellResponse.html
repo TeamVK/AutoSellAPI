@@ -92,6 +92,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">SellResponse</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents the response of a sell operation in the AutoSell plugin.
+ It contains information about the type of response, items sold, price,
+ player involved, and the list of sold items.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -108,7 +111,10 @@ loadScripts(document, 'script');</script>
  int&nbsp;itemsSold,
  double&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;soldItems)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructor to initialize the SellResponse object with the response type,
+ player, number of items sold, price, and list of sold items.</div>
+</div>
 </div>
 </section>
 </li>
@@ -163,6 +169,16 @@ loadScripts(document, 'script');</script>
  int&nbsp;itemsSold,
  double&nbsp;price,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;soldItems)</span></div>
+<div class="block">Constructor to initialize the SellResponse object with the response type,
+ player, number of items sold, price, and list of sold items.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>type</code> - The type of response for the sell operation.</dd>
+<dd><code>player</code> - The player who sold the items.</dd>
+<dd><code>itemsSold</code> - The number of items sold.</dd>
+<dd><code>price</code> - The total price for the sold items.</dd>
+<dd><code>soldItems</code> - The list of items that were sold.</dd>
+</dl>
 </section>
 </li>
 </ul>

@@ -94,6 +94,10 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">FullInventoryEvent</span>
 <span class="extends-implements">extends org.bukkit.event.Event</span></div>
+<div class="block">This event is called when a player's inventory is full and an item is added to it.
+ It is used to handle the case when a player tries to add an item to a full inventory.
+ <p>
+ This event is not cancellable, and it does not affect the item being added.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -116,7 +120,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.bukkit.entity.Player,org.bukkit.inventory.ItemStack)" class="member-name-link">FullInventoryEvent</a><wbr>(org.bukkit.entity.Player&nbsp;player,
  org.bukkit.inventory.ItemStack&nbsp;itemStack)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a new FullInventoryEvent.</div>
+</div>
 </div>
 </section>
 </li>
@@ -133,19 +139,29 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static org.bukkit.event.HandlerList</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getHandlerList()" class="member-name-link">getHandlerList</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the handler list for this event.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull org.bukkit.event.HandlerList</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHandlers()" class="member-name-link">getHandlers</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the handler list for this event.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.bukkit.inventory.ItemStack</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getItemStack()" class="member-name-link">getItemStack</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the item stack that was added to the inventory.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the player who has a full inventory.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.bukkit.entity.Player</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPlayer()" class="member-name-link">getPlayer</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the player who has a full inventory.</div>
+</div>
 </div>
 </div>
 </div>
@@ -171,6 +187,12 @@ loadScripts(document, 'script');</script>
 <h3>FullInventoryEvent</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">FullInventoryEvent</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player,
  org.bukkit.inventory.ItemStack&nbsp;itemStack)</span></div>
+<div class="block">Creates a new FullInventoryEvent.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player who has a full inventory.</dd>
+<dd><code>itemStack</code> - The item stack that was added to the inventory.</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -185,12 +207,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getName()">
 <h3>getName</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getName</span>()</div>
+<div class="block">Gets the player who has a full inventory.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The player who has a full inventory.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPlayer()">
 <h3>getPlayer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.bukkit.entity.Player</span>&nbsp;<span class="element-name">getPlayer</span>()</div>
+<div class="block">Gets the player who has a full inventory.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The player who has a full inventory.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -198,9 +230,12 @@ loadScripts(document, 'script');</script>
 <h3>getHandlers</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlers</span>()</div>
+<div class="block">Gets the handler list for this event.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>getHandlers</code>&nbsp;in class&nbsp;<code>org.bukkit.event.Event</code></dd>
+<dt>Returns:</dt>
+<dd>The handler list for this event.</dd>
 </dl>
 </section>
 </li>
@@ -208,12 +243,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getHandlerList()">
 <h3>getHandlerList</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlerList</span>()</div>
+<div class="block">Gets the handler list for this event.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The handler list for this event.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getItemStack()">
 <h3>getItemStack</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.bukkit.inventory.ItemStack</span>&nbsp;<span class="element-name">getItemStack</span>()</div>
+<div class="block">Gets the item stack that was added to the inventory.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The item stack that was added to the inventory.</dd>
+</dl>
 </section>
 </li>
 </ul>

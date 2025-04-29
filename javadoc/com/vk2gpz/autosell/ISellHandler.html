@@ -88,6 +88,9 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">ISellHandler</span></div>
+<div class="block">This interface defines the methods for handling shops in the AutoSell plugin.
+ It includes methods for initializing shops, checking if a player can sell,
+ and selling items or inventory.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,59 +107,91 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addShop(com.vk2gpz.autosell.object.Shop)" class="member-name-link">addShop</a><wbr>(<a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Adds a shop.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#autoSell(org.bukkit.entity.Player,java.util.List,org.bukkit.block.Block)" class="member-name-link">autoSell</a><wbr>(org.bukkit.entity.Player&nbsp;player,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;itemStacks,
  org.bukkit.block.Block&nbsp;block)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Execute automatic sell for the player.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#canSell(org.bukkit.entity.Player)" class="member-name-link">canSell</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if the player can sell.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clearShops()" class="member-name-link">clearShops</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Clears the shops.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getNextShopPriority()" class="member-name-link">getNextShopPriority</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the next shop priority.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPermShop(org.bukkit.entity.Player)" class="member-name-link">getPermShop</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the shop for the player with the permission.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShop(java.lang.String)" class="member-name-link">getShop</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;shopName)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the shop by name.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShop(org.bukkit.entity.Player)" class="member-name-link">getShop</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the shop for the player.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShop(org.bukkit.entity.Player,org.bukkit.block.Block)" class="member-name-link">getShop</a><wbr>(org.bukkit.entity.Player&nbsp;palyer,
  org.bukkit.block.Block&nbsp;block)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the shop for the player at the specified block.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getShops()" class="member-name-link">getShops</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the shops.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getTotalMultiplier(org.bukkit.entity.Player,com.vk2gpz.autosell.object.Shop)" class="member-name-link">getTotalMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;player,
  <a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Calculate the total multiplier for the player and shop.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#initShops()" class="member-name-link">initShops</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Initializes the shops.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isShop(java.lang.String)" class="member-name-link">isShop</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;shopName)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if the shop name is valid.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeShop(com.vk2gpz.autosell.object.Shop)" class="member-name-link">removeShop</a><wbr>(<a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Removes a shop.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="object/SellResponse.html" title="class in com.vk2gpz.autosell.object">SellResponse</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sellInventory(org.bukkit.entity.Player,com.vk2gpz.autosell.object.Shop)" class="member-name-link">sellInventory</a><wbr>(org.bukkit.entity.Player&nbsp;player,
  @NotNull <a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Execute sell for the player from its inventory</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="object/SellResponse.html" title="class in com.vk2gpz.autosell.object">SellResponse</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#sellItems(org.bukkit.entity.Player,java.util.List,com.vk2gpz.autosell.object.Shop)" class="member-name-link">sellItems</a><wbr>(org.bukkit.entity.Player&nbsp;player,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;itemStacks,
  @NotNull <a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Execute sell for the player with the specified items</div>
+</div>
 </div>
 </div>
 </div>
@@ -175,60 +210,112 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="initShops()">
 <h3>initShops</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">initShops</span>()</div>
+<div class="block">Initializes the shops.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="getShops()">
 <h3>getShops</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&gt;</span>&nbsp;<span class="element-name">getShops</span>()</div>
+<div class="block">Gets the shops.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The shops.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="canSell(org.bukkit.entity.Player)">
 <h3>canSell</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">canSell</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player can sell.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player can sell, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="clearShops()">
 <h3>clearShops</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">clearShops</span>()</div>
+<div class="block">Clears the shops.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="getShop(org.bukkit.entity.Player)">
 <h3>getShop</h3>
 <div class="member-signature"><span class="return-type"><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></span>&nbsp;<span class="element-name">getShop</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Gets the shop for the player.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to get the shop for.</dd>
+<dt>Returns:</dt>
+<dd>The shop for the player.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getShop(java.lang.String)">
 <h3>getShop</h3>
 <div class="member-signature"><span class="return-type"><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></span>&nbsp;<span class="element-name">getShop</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;shopName)</span></div>
+<div class="block">Gets the shop by name.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>shopName</code> - The name of the shop to get.</dd>
+<dt>Returns:</dt>
+<dd>The shop with the specified name.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addShop(com.vk2gpz.autosell.object.Shop)">
 <h3>addShop</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">addShop</span><wbr><span class="parameters">(<a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</span></div>
+<div class="block">Adds a shop.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>shop</code> - The shop to add.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeShop(com.vk2gpz.autosell.object.Shop)">
 <h3>removeShop</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">removeShop</span><wbr><span class="parameters">(<a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</span></div>
+<div class="block">Removes a shop.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>shop</code> - The shop to remove.</dd>
+<dt>Returns:</dt>
+<dd>true if the shop was removed, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getNextShopPriority()">
 <h3>getNextShopPriority</h3>
 <div class="member-signature"><span class="return-type">int</span>&nbsp;<span class="element-name">getNextShopPriority</span>()</div>
+<div class="block">Gets the next shop priority.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The next shop priority.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isShop(java.lang.String)">
 <h3>isShop</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isShop</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;shopName)</span></div>
+<div class="block">Checks if the shop name is valid.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>shopName</code> - The name of the shop to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the shop name is valid, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -236,12 +323,27 @@ loadScripts(document, 'script');</script>
 <h3>getShop</h3>
 <div class="member-signature"><span class="return-type"><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></span>&nbsp;<span class="element-name">getShop</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;palyer,
  org.bukkit.block.Block&nbsp;block)</span></div>
+<div class="block">Gets the shop for the player at the specified block.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>palyer</code> - </dd>
+<dd><code>block</code> - </dd>
+<dt>Returns:</dt>
+<dd>The shop for the player at the specified block.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getPermShop(org.bukkit.entity.Player)">
 <h3>getPermShop</h3>
 <div class="member-signature"><span class="return-type"><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></span>&nbsp;<span class="element-name">getPermShop</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Gets the shop for the player with the permission.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to get the shop for.</dd>
+<dt>Returns:</dt>
+<dd>The shop for the player with the permission.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -250,6 +352,15 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">autoSell</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;itemStacks,
  org.bukkit.block.Block&nbsp;block)</span></div>
+<div class="block">Execute automatic sell for the player.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to execute the automatic sell for.</dd>
+<dd><code>itemStacks</code> - The list of item stacks to sell.</dd>
+<dd><code>block</code> - The block to sell at.</dd>
+<dt>Returns:</dt>
+<dd>true if the automatic sell was executed, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -259,6 +370,15 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;org.bukkit.inventory.ItemStack&gt;&nbsp;itemStacks,
  @NotNull
  @NotNull <a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</span></div>
+<div class="block">Execute sell for the player with the specified items</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to execute the automatic sell for.</dd>
+<dd><code>itemStacks</code> - The list of item stacks to sell.</dd>
+<dd><code>shop</code> - The shop to sell at.</dd>
+<dt>Returns:</dt>
+<dd>true if the sell was executed, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -267,6 +387,14 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="return-type"><a href="object/SellResponse.html" title="class in com.vk2gpz.autosell.object">SellResponse</a></span>&nbsp;<span class="element-name">sellInventory</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player,
  @NotNull
  @NotNull <a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</span></div>
+<div class="block">Execute sell for the player from its inventory</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to execute the sell for.</dd>
+<dd><code>shop</code> - The shop to sell at.</dd>
+<dt>Returns:</dt>
+<dd>true if the sell was executed, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -274,6 +402,14 @@ loadScripts(document, 'script');</script>
 <h3>getTotalMultiplier</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getTotalMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player,
  <a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;shop)</span></div>
+<div class="block">Calculate the total multiplier for the player and shop.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to calculate the multiplier for.</dd>
+<dd><code>shop</code> - The shop to calculate the multiplier for.</dd>
+<dt>Returns:</dt>
+<dd>The total multiplier for the player and shop.</dd>
+</dl>
 </section>
 </li>
 </ul>

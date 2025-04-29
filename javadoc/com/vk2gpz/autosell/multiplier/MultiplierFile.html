@@ -92,6 +92,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">MultiplierFile</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">This file is used to load and save the multipliers from the config file</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,7 +105,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.bukkit.plugin.Plugin)" class="member-name-link">MultiplierFile</a><wbr>(org.bukkit.plugin.Plugin&nbsp;instance)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">The constructor for the MultiplierFile</div>
+</div>
 </div>
 </section>
 </li>
@@ -122,34 +125,54 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deleteMultiplier(java.lang.String,java.lang.String)" class="member-name-link">deleteMultiplier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Deletes the multiplier for the player</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.bukkit.configuration.file.FileConfiguration</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#load()" class="member-name-link">load</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the file configuration for the multipliers</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadGlobalMultiplier()" class="member-name-link">loadGlobalMultiplier</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Loads the global multiplier from the config file</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#loadMultiplierIfExists(java.lang.String)" class="member-name-link">loadMultiplierIfExists</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Loads the multiplier for the player</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#reload()" class="member-name-link">reload</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Reloads the multipliers from the config file</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#save()" class="member-name-link">save</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Saves the multipliers to the file.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#saveLoadedMultipliers()" class="member-name-link">saveLoadedMultipliers</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Saves the loaded multipliers to the file.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#saveMultiplier(com.vk2gpz.autosell.object.Multiplier)" class="member-name-link">saveMultiplier</a><wbr>(<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&nbsp;multi)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Saves the global multiplier to the config file</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#saveMultiplier(java.util.List)" class="member-name-link">saveMultiplier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&gt;&nbsp;m)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Saves the multipliers to the config file</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setHeader()" class="member-name-link">setHeader</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the header for the multipliers file</div>
+</div>
 </div>
 </div>
 </div>
@@ -171,6 +194,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(org.bukkit.plugin.Plugin)">
 <h3>MultiplierFile</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">MultiplierFile</span><wbr><span class="parameters">(org.bukkit.plugin.Plugin&nbsp;instance)</span></div>
+<div class="block">The constructor for the MultiplierFile</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>instance</code> - The plugin instance</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -185,42 +213,57 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="reload()">
 <h3>reload</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">reload</span>()</div>
+<div class="block">Reloads the multipliers from the config file</div>
 </section>
 </li>
 <li>
 <section class="detail" id="load()">
 <h3>load</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.bukkit.configuration.file.FileConfiguration</span>&nbsp;<span class="element-name">load</span>()</div>
+<div class="block">Gets the file configuration for the multipliers</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The file configuration for the multipliers</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="save()">
 <h3>save</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">save</span>()</div>
+<div class="block">Saves the multipliers to the file.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="setHeader()">
 <h3>setHeader</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setHeader</span>()</div>
+<div class="block">Sets the header for the multipliers file</div>
 </section>
 </li>
 <li>
 <section class="detail" id="loadGlobalMultiplier()">
 <h3>loadGlobalMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadGlobalMultiplier</span>()</div>
+<div class="block">Loads the global multiplier from the config file</div>
 </section>
 </li>
 <li>
 <section class="detail" id="saveMultiplier(com.vk2gpz.autosell.object.Multiplier)">
 <h3>saveMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">saveMultiplier</span><wbr><span class="parameters">(<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&nbsp;multi)</span></div>
+<div class="block">Saves the global multiplier to the config file</div>
 </section>
 </li>
 <li>
 <section class="detail" id="saveMultiplier(java.util.List)">
 <h3>saveMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">saveMultiplier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&gt;&nbsp;m)</span></div>
+<div class="block">Saves the multipliers to the config file</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>m</code> - The list of multipliers to save</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -228,18 +271,34 @@ loadScripts(document, 'script');</script>
 <h3>deleteMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">deleteMultiplier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid,
  <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Deletes the multiplier for the player</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - The uuid of the player</dd>
+<dd><code>name</code> - The name of the player</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="loadMultiplierIfExists(java.lang.String)">
 <h3>loadMultiplierIfExists</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">loadMultiplierIfExists</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid)</span></div>
+<div class="block">Loads the multiplier for the player</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - The uuid of the player</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="saveLoadedMultipliers()">
 <h3>saveLoadedMultipliers</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">saveLoadedMultipliers</span>()</div>
+<div class="block">Saves the loaded multipliers to the file.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The number of multipliers loaded</dd>
+</dl>
 </section>
 </li>
 </ul>

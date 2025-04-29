@@ -88,6 +88,10 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">IAreaHook</span></div>
+<div class="block">Interface for area hooks.
+ <p>
+ This interface is used to get the name of an area based on a location.
+ It also provides a method to check if the hook is active.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,13 +108,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getAreaName(org.bukkit.Location)" class="member-name-link">getAreaName</a><wbr>(org.bukkit.Location&nbsp;location)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the name of the area based on the given location.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#isHooked()" class="member-name-link">isHooked</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if the hook is active.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#name()" class="member-name-link">name</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the name of the hook.</div>
+</div>
 </div>
 </div>
 </div>
@@ -129,18 +139,35 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getAreaName(org.bukkit.Location)">
 <h3>getAreaName</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getAreaName</span><wbr><span class="parameters">(org.bukkit.Location&nbsp;location)</span></div>
+<div class="block">Gets the name of the area based on the given location.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>location</code> - The location to check.</dd>
+<dt>Returns:</dt>
+<dd>The name of the area, or null if not found.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isHooked()">
 <h3>isHooked</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">isHooked</span>()</div>
+<div class="block">Checks if the hook is active.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if the hook is active, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="name()">
 <h3>name</h3>
 <div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">name</span>()</div>
+<div class="block">Gets the name of the hook.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The name of the hook.</dd>
+</dl>
 </section>
 </li>
 </ul>

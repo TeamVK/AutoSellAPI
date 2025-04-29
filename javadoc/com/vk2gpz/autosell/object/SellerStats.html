@@ -92,6 +92,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">SellerStats</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents the statistics of a seller in the AutoSell plugin.
+ It contains information about the player's name, items sold,
+ whether they had a multiplier, and the highest multiplier achieved.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,7 +107,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String)" class="member-name-link">SellerStats</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;playerName)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructor to initialize the SellerStats object with the player's name.</div>
+</div>
 </div>
 </section>
 </li>
@@ -124,7 +129,9 @@ loadScripts(document, 'script');</script>
  int&nbsp;amount,
  double&nbsp;cost,
  double&nbsp;multiplier)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Adds an item sold by the player to the list of sold items.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHighestMultiplier()" class="member-name-link">getHighestMultiplier</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -167,6 +174,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(java.lang.String)">
 <h3>SellerStats</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">SellerStats</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;playerName)</span></div>
+<div class="block">Constructor to initialize the SellerStats object with the player's name.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>playerName</code> - The name of the player.</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -196,6 +208,15 @@ loadScripts(document, 'script');</script>
  int&nbsp;amount,
  double&nbsp;cost,
  double&nbsp;multiplier)</span></div>
+<div class="block">Adds an item sold by the player to the list of sold items.
+ If the item already exists in the list, it updates the amount sold and total sell amount.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>material</code> - The material type of the item sold.</dd>
+<dd><code>amount</code> - The amount of the item sold.</dd>
+<dd><code>cost</code> - The total sell amount for the item.</dd>
+<dd><code>multiplier</code> - The multiplier applied to the sale.</dd>
+</dl>
 </section>
 </li>
 <li>

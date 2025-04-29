@@ -92,6 +92,8 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Shop</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">Represents a shop in the AutoSell plugin.
+ Each shop has a name, priority, and a map of item prices.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -106,13 +108,19 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color"><code><a href="#name" class="member-name-link">name</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">The name of the shop.</div>
+</div>
 <div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a><wbr>&lt;org.bukkit.inventory.ItemStack,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#prices" class="member-name-link">prices</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">The map of item prices in the shop.</div>
+</div>
 <div class="col-first even-row-color"><code>protected int</code></div>
 <div class="col-second even-row-color"><code><a href="#priority" class="member-name-link">priority</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">The priority of the shop.</div>
+</div>
 </div>
 </section>
 </li>
@@ -125,7 +133,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String)" class="member-name-link">Shop</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructor to initialize the Shop object with a name.</div>
+</div>
 </div>
 </section>
 </li>
@@ -142,7 +152,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getBaseWorth(org.bukkit.inventory.ItemStack)" class="member-name-link">getBaseWorth</a><wbr>(org.bukkit.inventory.ItemStack&nbsp;item)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the base worth of an item in the shop.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getName()" class="member-name-link">getName</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -185,18 +197,22 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="name">
 <h3>name</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">name</span></div>
+<div class="block">The name of the shop.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="priority">
 <h3>priority</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">priority</span></div>
+<div class="block">The priority of the shop.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="prices">
 <h3>prices</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;org.bukkit.inventory.ItemStack,<wbr><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Double.html" title="class or interface in java.lang" class="external-link">Double</a>&gt;</span>&nbsp;<span class="element-name">prices</span></div>
+<div class="block">The map of item prices in the shop.
+ The key is the ItemStack and the value is the price.</div>
 </section>
 </li>
 </ul>
@@ -211,6 +227,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(java.lang.String)">
 <h3>Shop</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Shop</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</span></div>
+<div class="block">Constructor to initialize the Shop object with a name.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - The name of the shop.</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -237,6 +258,13 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="getBaseWorth(org.bukkit.inventory.ItemStack)">
 <h3>getBaseWorth</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getBaseWorth</span><wbr><span class="parameters">(org.bukkit.inventory.ItemStack&nbsp;item)</span></div>
+<div class="block">Gets the base worth of an item in the shop.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>item</code> - The item to get the base worth for.</dd>
+<dt>Returns:</dt>
+<dd>The base worth of the item, or -1.0 if not found.</dd>
+</dl>
 </section>
 </li>
 <li>

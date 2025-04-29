@@ -88,6 +88,9 @@ loadScripts(document, 'script');</script>
 <section class="class-description" id="class-description">
 <hr>
 <div class="type-signature"><span class="modifiers">public interface </span><span class="element-name type-name-label">IAutoSell</span></div>
+<div class="block">This interface provides methods to interact with the AutoSell plugin.
+ It allows checking if a player is in sell mode, smelt mode, or auto block mode,
+ and provides access to the options, sell handler, and area hook.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -104,52 +107,84 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getAllShops()" class="member-name-link">getAllShops</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Gets all the shops.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="area/IAreaHook.html" title="interface in com.vk2gpz.autosell.area">IAreaHook</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getAreaHook()" class="member-name-link">getAreaHook</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the area hook.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="object/AutoSellOptions.html" title="class in com.vk2gpz.autosell.object">AutoSellOptions</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getAutoSellOptions()" class="member-name-link">getAutoSellOptions</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Gets AutoSell options.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getCurrentShop(org.bukkit.entity.Player)" class="member-name-link">getCurrentShop</a><wbr>(org.bukkit.entity.Player&nbsp;var0)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getCurrentShop(org.bukkit.entity.Player)" class="member-name-link">getCurrentShop</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Gets the player's current shop.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="IAutoSell.html" title="interface in com.vk2gpz.autosell">IAutoSell</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#getInstance()" class="member-name-link">getInstance</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Gets the instance of the AutoSell plugin.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getMultiplier(org.bukkit.entity.Player)" class="member-name-link">getMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;var0)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#getMultiplier(org.bukkit.entity.Player)" class="member-name-link">getMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Gets the player's current multiplier.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="object/AutoSellOptions.html" title="class in com.vk2gpz.autosell.object">AutoSellOptions</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getOptions()" class="member-name-link">getOptions</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the AutoSell options.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="ISellHandler.html" title="interface in com.vk2gpz.autosell">ISellHandler</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSellHandler()" class="member-name-link">getSellHandler</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Gets the sell handler.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#hasMultiplier(org.bukkit.entity.Player)" class="member-name-link">hasMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;var0)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#hasMultiplier(org.bukkit.entity.Player)" class="member-name-link">hasMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Checks if the player has a multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#hasShop(org.bukkit.entity.Player)" class="member-name-link">hasShop</a><wbr>(org.bukkit.entity.Player&nbsp;var0)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#hasShop(org.bukkit.entity.Player)" class="member-name-link">hasShop</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Checks if the player has a shop to sell items.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#inAutoBlockMode(org.bukkit.entity.Player)" class="member-name-link">inAutoBlockMode</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if the player is in auto block mode.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#inSellMode(org.bukkit.entity.Player)" class="member-name-link">inSellMode</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if the player is in sell mode.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#inSmeltMode(org.bukkit.entity.Player)" class="member-name-link">inSmeltMode</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Checks if the player is in smelt mode.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#isInAutoSellMode(org.bukkit.entity.Player)" class="member-name-link">isInAutoSellMode</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Checks if the player is in auto sell mode.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#isInAutoSmeltMode(org.bukkit.entity.Player)" class="member-name-link">isInAutoSmeltMode</a><wbr>(org.bukkit.entity.Player&nbsp;var0)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">&nbsp;</div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#isInAutoSmeltMode(org.bukkit.entity.Player)" class="member-name-link">isInAutoSmeltMode</a><wbr>(org.bukkit.entity.Player&nbsp;player)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Checks if the player is in auto smelt mode.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="area/IAreaHook.html" title="interface in com.vk2gpz.autosell.area">IAreaHook</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setAreaHook(com.vk2gpz.autosell.area.IAreaHook)" class="member-name-link">setAreaHook</a><wbr>(<a href="area/IAreaHook.html" title="interface in com.vk2gpz.autosell.area">IAreaHook</a>&nbsp;area)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Sets the area hook.</div>
+</div>
 </div>
 </div>
 </div>
@@ -168,96 +203,196 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="inSellMode(org.bukkit.entity.Player)">
 <h3>inSellMode</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">inSellMode</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player is in sell mode.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player is in sell mode, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="inSmeltMode(org.bukkit.entity.Player)">
 <h3>inSmeltMode</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">inSmeltMode</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player is in smelt mode.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player is in smelt mode, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="inAutoBlockMode(org.bukkit.entity.Player)">
 <h3>inAutoBlockMode</h3>
 <div class="member-signature"><span class="return-type">boolean</span>&nbsp;<span class="element-name">inAutoBlockMode</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player is in auto block mode.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player is in auto block mode, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getOptions()">
 <h3>getOptions</h3>
 <div class="member-signature"><span class="return-type"><a href="object/AutoSellOptions.html" title="class in com.vk2gpz.autosell.object">AutoSellOptions</a></span>&nbsp;<span class="element-name">getOptions</span>()</div>
+<div class="block">Gets the AutoSell options.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Gets the AutoSell options.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getSellHandler()">
 <h3>getSellHandler</h3>
 <div class="member-signature"><span class="return-type"><a href="ISellHandler.html" title="interface in com.vk2gpz.autosell">ISellHandler</a></span>&nbsp;<span class="element-name">getSellHandler</span>()</div>
+<div class="block">Gets the sell handler.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The sell handler.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getAreaHook()">
 <h3>getAreaHook</h3>
 <div class="member-signature"><span class="return-type"><a href="area/IAreaHook.html" title="interface in com.vk2gpz.autosell.area">IAreaHook</a></span>&nbsp;<span class="element-name">getAreaHook</span>()</div>
+<div class="block">Gets the area hook.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The area hook.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setAreaHook(com.vk2gpz.autosell.area.IAreaHook)">
 <h3>setAreaHook</h3>
 <div class="member-signature"><span class="return-type"><a href="area/IAreaHook.html" title="interface in com.vk2gpz.autosell.area">IAreaHook</a></span>&nbsp;<span class="element-name">setAreaHook</span><wbr><span class="parameters">(<a href="area/IAreaHook.html" title="interface in com.vk2gpz.autosell.area">IAreaHook</a>&nbsp;area)</span></div>
+<div class="block">Sets the area hook.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>area</code> - The area hook to set.</dd>
+<dt>Returns:</dt>
+<dd>The newly set area hook.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getInstance()">
 <h3>getInstance</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="IAutoSell.html" title="interface in com.vk2gpz.autosell">IAutoSell</a></span>&nbsp;<span class="element-name">getInstance</span>()</div>
+<div class="block">Gets the instance of the AutoSell plugin.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Gets the instance of the AutoSell plugin.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isInAutoSellMode(org.bukkit.entity.Player)">
 <h3>isInAutoSellMode</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isInAutoSellMode</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player is in auto sell mode.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player is in auto sell mode, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getAllShops()">
 <h3>getAllShops</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&gt;</span>&nbsp;<span class="element-name">getAllShops</span>()</div>
+<div class="block">Gets all the shops.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Gets all the shops.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isInAutoSmeltMode(org.bukkit.entity.Player)">
 <h3>isInAutoSmeltMode</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isInAutoSmeltMode</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;var0)</span></div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isInAutoSmeltMode</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player is in auto smelt mode.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player is in auto smelt mode, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="hasShop(org.bukkit.entity.Player)">
 <h3>hasShop</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasShop</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;var0)</span></div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasShop</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player has a shop to sell items.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player has a shop, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getCurrentShop(org.bukkit.entity.Player)">
 <h3>getCurrentShop</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></span>&nbsp;<span class="element-name">getCurrentShop</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;var0)</span></div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a></span>&nbsp;<span class="element-name">getCurrentShop</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Gets the player's current shop.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>the player's current shop.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="hasMultiplier(org.bukkit.entity.Player)">
 <h3>hasMultiplier</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;var0)</span></div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Checks if the player has a multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player has a multiplier, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getMultiplier(org.bukkit.entity.Player)">
 <h3>getMultiplier</h3>
-<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></span>&nbsp;<span class="element-name">getMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;var0)</span></div>
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></span>&nbsp;<span class="element-name">getMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player)</span></div>
+<div class="block">Gets the player's current multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>the player's current multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getAutoSellOptions()">
 <h3>getAutoSellOptions</h3>
 <div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="return-type"><a href="object/AutoSellOptions.html" title="class in com.vk2gpz.autosell.object">AutoSellOptions</a></span>&nbsp;<span class="element-name">getAutoSellOptions</span>()</div>
+<div class="block">Gets AutoSell options.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>AutoSell options.</dd>
+</dl>
 </section>
 </li>
 </ul>

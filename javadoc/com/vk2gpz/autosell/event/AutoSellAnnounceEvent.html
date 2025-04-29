@@ -99,6 +99,10 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">AutoSellAnnounceEvent</span>
 <span class="extends-implements">extends org.bukkit.event.Event
 implements org.bukkit.event.Cancellable</span></div>
+<div class="block">This event is called when a player sells items automatically.
+ It is used to modify the total amount of money earned and the number of items sold.
+ <p>
+ This event is cancellable, and if cancelled, the sale will not be processed.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -122,7 +126,9 @@ implements org.bukkit.event.Cancellable</span></div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.bukkit.entity.Player,double,int)" class="member-name-link">AutoSellAnnounceEvent</a><wbr>(org.bukkit.entity.Player&nbsp;player,
  double&nbsp;total,
  int&nbsp;amountOfItemsSold)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Creates a new AutoSellAnnounceEvent.</div>
+</div>
 </div>
 </section>
 </li>
@@ -139,31 +145,49 @@ implements org.bukkit.event.Cancellable</span></div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAmountOfItemsSold()" class="member-name-link">getAmountOfItemsSold</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the number of items sold.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static org.bukkit.event.HandlerList</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getHandlerList()" class="member-name-link">getHandlerList</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the handler list for this event.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull org.bukkit.event.HandlerList</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHandlers()" class="member-name-link">getHandlers</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the handler list for this event.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.bukkit.entity.Player</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getPlayer()" class="member-name-link">getPlayer</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the player who sold the items.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>double</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getTotal()" class="member-name-link">getTotal</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets the total amount of money earned from the sale.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCancelled()" class="member-name-link">isCancelled</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets whether the event is cancelled or not.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setAmountOfItemsSold(int)" class="member-name-link">setAmountOfItemsSold</a><wbr>(int&nbsp;amountOfItemsSold)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the number of items sold.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setCancelled(boolean)" class="member-name-link">setCancelled</a><wbr>(boolean&nbsp;cancelled)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets whether the event is cancelled or not.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setTotal(double)" class="member-name-link">setTotal</a><wbr>(double&nbsp;total)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Sets the total amount of money earned from the sale.</div>
+</div>
 </div>
 </div>
 </div>
@@ -190,6 +214,13 @@ implements org.bukkit.event.Cancellable</span></div>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">AutoSellAnnounceEvent</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;player,
  double&nbsp;total,
  int&nbsp;amountOfItemsSold)</span></div>
+<div class="block">Creates a new AutoSellAnnounceEvent.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>player</code> - The player who sold the items.</dd>
+<dd><code>total</code> - The total amount of money earned from the sale.</dd>
+<dd><code>amountOfItemsSold</code> - The number of items sold.</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -204,6 +235,11 @@ implements org.bukkit.event.Cancellable</span></div>
 <section class="detail" id="getPlayer()">
 <h3>getPlayer</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.bukkit.entity.Player</span>&nbsp;<span class="element-name">getPlayer</span>()</div>
+<div class="block">Gets the player who sold the items.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The player who sold the items.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -211,9 +247,12 @@ implements org.bukkit.event.Cancellable</span></div>
 <h3>getHandlers</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public</span>&nbsp;<span class="return-type">@NotNull org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlers</span>()</div>
+<div class="block">Gets the handler list for this event.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>getHandlers</code>&nbsp;in class&nbsp;<code>org.bukkit.event.Event</code></dd>
+<dt>Returns:</dt>
+<dd>The handler list for this event.</dd>
 </dl>
 </section>
 </li>
@@ -221,39 +260,67 @@ implements org.bukkit.event.Cancellable</span></div>
 <section class="detail" id="getHandlerList()">
 <h3>getHandlerList</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">org.bukkit.event.HandlerList</span>&nbsp;<span class="element-name">getHandlerList</span>()</div>
+<div class="block">Gets the handler list for this event.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The handler list for this event.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getTotal()">
 <h3>getTotal</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getTotal</span>()</div>
+<div class="block">Gets the total amount of money earned from the sale.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The total amount of money earned from the sale.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setTotal(double)">
 <h3>setTotal</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setTotal</span><wbr><span class="parameters">(double&nbsp;total)</span></div>
+<div class="block">Sets the total amount of money earned from the sale.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>total</code> - The total amount of money earned from the sale.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getAmountOfItemsSold()">
 <h3>getAmountOfItemsSold</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getAmountOfItemsSold</span>()</div>
+<div class="block">Gets the number of items sold.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The number of items sold.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setAmountOfItemsSold(int)">
 <h3>setAmountOfItemsSold</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setAmountOfItemsSold</span><wbr><span class="parameters">(int&nbsp;amountOfItemsSold)</span></div>
+<div class="block">Sets the number of items sold.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>amountOfItemsSold</code> - The number of items sold.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isCancelled()">
 <h3>isCancelled</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isCancelled</span>()</div>
+<div class="block">Gets whether the event is cancelled or not.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>isCancelled</code>&nbsp;in interface&nbsp;<code>org.bukkit.event.Cancellable</code></dd>
+<dt>Returns:</dt>
+<dd>Whether the event is cancelled or not.</dd>
 </dl>
 </section>
 </li>
@@ -261,9 +328,12 @@ implements org.bukkit.event.Cancellable</span></div>
 <section class="detail" id="setCancelled(boolean)">
 <h3>setCancelled</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setCancelled</span><wbr><span class="parameters">(boolean&nbsp;cancelled)</span></div>
+<div class="block">Sets whether the event is cancelled or not.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code>setCancelled</code>&nbsp;in interface&nbsp;<code>org.bukkit.event.Cancellable</code></dd>
+<dt>Parameters:</dt>
+<dd><code>cancelled</code> - Whether the event is cancelled or not.</dd>
 </dl>
 </section>
 </li>

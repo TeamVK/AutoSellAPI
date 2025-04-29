@@ -92,6 +92,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Multipliers</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">This class is used to manage multipliers for players and global multipliers.
+ It provides methods to add, remove, and retrieve multipliers for players,
+ as well as managing global multipliers and limits.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -106,10 +109,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/TreeMap.html" title="class or interface in java.util" class="external-link">TreeMap</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="../object/AreaMultiplier.html" title="class in com.vk2gpz.autosell.object">AreaMultiplier</a>&gt;</code></div>
 <div class="col-second even-row-color"><code><a href="#areaMultipliers" class="member-name-link">areaMultipliers</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">A map of area multipliers</div>
+</div>
 <div class="col-first odd-row-color"><code>protected static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/TreeMap.html" title="class or interface in java.util" class="external-link">TreeMap</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="../object/PermissionMultiplier.html" title="class in com.vk2gpz.autosell.object">PermissionMultiplier</a>&gt;</code></div>
 <div class="col-second odd-row-color"><code><a href="#permMultipliers" class="member-name-link">permMultipliers</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-last odd-row-color">
+<div class="block">A map of permission multipliers</div>
+</div>
 </div>
 </section>
 </li>
@@ -122,7 +129,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.bukkit.plugin.Plugin)" class="member-name-link">Multipliers</a><wbr>(org.bukkit.plugin.Plugin&nbsp;plugin)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">The constructor for the Multipliers class</div>
+</div>
 </div>
 </section>
 </li>
@@ -139,32 +148,50 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#addLimit(com.vk2gpz.autosell.object.MultiplierLimit)" class="member-name-link">addLimit</a><wbr>(<a href="../object/MultiplierLimit.html" title="class in com.vk2gpz.autosell.object">MultiplierLimit</a>&nbsp;limit)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Adds a multiplier limit.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#addMultiplier(com.vk2gpz.autosell.object.Multiplier)" class="member-name-link">addMultiplier</a><wbr>(<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&nbsp;m)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Adds a new multiplier.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#clear()" class="member-name-link">clear</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Clears the current data.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#clearLimits()" class="member-name-link">clearLimits</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Clears the limits.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @Nullable <a href="../object/AreaMultiplier.html" title="class in com.vk2gpz.autosell.object">AreaMultiplier</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getAreaMultiplier(org.bukkit.entity.Player,com.vk2gpz.autosell.object.Shop)" class="member-name-link">getAreaMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;p,
  <a href="../object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;s)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Checks whether the player has an area-based multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getDefaultLimit()" class="member-name-link">getDefaultLimit</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the default limit for multipliers.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getGlobalMultiplier()" class="member-name-link">getGlobalMultiplier</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the global multiplier.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static double</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getLimit(org.bukkit.entity.Player)" class="member-name-link">getLimit</a><wbr>(org.bukkit.entity.Player&nbsp;p)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the limit for a player.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="../object/MultiplierLimit.html" title="class in com.vk2gpz.autosell.object">MultiplierLimit</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getLimits()" class="member-name-link">getLimits</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets the map of multiplier limits.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static @Nullable <a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#getMultiplier(java.lang.String)" class="member-name-link">getMultiplier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;playerName)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
@@ -172,19 +199,29 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @Nullable <a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getMultiplier(org.bukkit.entity.Player)" class="member-name-link">getMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;p)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets a multiplier for a player.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @Nullable <a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getMultiplierByUuid(java.lang.String)" class="member-name-link">getMultiplierByUuid</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets a multiplier for a player by their UUID.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a><wbr>&lt;<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getMultipliers()" class="member-name-link">getMultipliers</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Gets a list of multipliers for all players.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @Nullable <a href="../object/PermissionMultiplier.html" title="class in com.vk2gpz.autosell.object">PermissionMultiplier</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getPermissionMultiplier(org.bukkit.entity.Player)" class="member-name-link">getPermissionMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;p)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Checks whether the player has a permission-based multiplier.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#hasGlobalMultiplier()" class="member-name-link">hasGlobalMultiplier</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Checks whether the global multiplier is set.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#removeMultiplier(java.lang.String)" class="member-name-link">removeMultiplier</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;playerName)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
@@ -192,19 +229,29 @@ loadScripts(document, 'script');</script>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#removeMultiplier(org.bukkit.entity.Player)" class="member-name-link">removeMultiplier</a><wbr>(org.bukkit.entity.Player&nbsp;p)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Removes a multiplier for a player.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#removeMultiplierByUuid(java.lang.String)" class="member-name-link">removeMultiplierByUuid</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Removes a multiplier for a player by their UUID.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#resetAllMultipliers()" class="member-name-link">resetAllMultipliers</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Resets all multipliers.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setDefaultLimit(double)" class="member-name-link">setDefaultLimit</a><wbr>(double&nbsp;limit)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Sets the default limit for multipliers.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#setGlobalMultiplier(com.vk2gpz.autosell.object.Multiplier)" class="member-name-link">setGlobalMultiplier</a><wbr>(<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&nbsp;globalMultiplier)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Sets the global multiplier.</div>
+</div>
 </div>
 </div>
 </div>
@@ -226,12 +273,14 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="permMultipliers">
 <h3>permMultipliers</h3>
 <div class="member-signature"><span class="modifiers">protected static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/TreeMap.html" title="class or interface in java.util" class="external-link">TreeMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="../object/PermissionMultiplier.html" title="class in com.vk2gpz.autosell.object">PermissionMultiplier</a>&gt;</span>&nbsp;<span class="element-name">permMultipliers</span></div>
+<div class="block">A map of permission multipliers</div>
 </section>
 </li>
 <li>
 <section class="detail" id="areaMultipliers">
 <h3>areaMultipliers</h3>
 <div class="member-signature"><span class="modifiers">protected static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/TreeMap.html" title="class or interface in java.util" class="external-link">TreeMap</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="../object/AreaMultiplier.html" title="class in com.vk2gpz.autosell.object">AreaMultiplier</a>&gt;</span>&nbsp;<span class="element-name">areaMultipliers</span></div>
+<div class="block">A map of area multipliers</div>
 </section>
 </li>
 </ul>
@@ -246,6 +295,11 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="&lt;init&gt;(org.bukkit.plugin.Plugin)">
 <h3>Multipliers</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Multipliers</span><wbr><span class="parameters">(org.bukkit.plugin.Plugin&nbsp;plugin)</span></div>
+<div class="block">The constructor for the Multipliers class</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>plugin</code> - The plugin instance</dd>
+</dl>
 </section>
 </li>
 </ul>
@@ -260,12 +314,18 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="clear()">
 <h3>clear</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">clear</span>()</div>
+<div class="block">Clears the current data.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="hasGlobalMultiplier()">
 <h3>hasGlobalMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">hasGlobalMultiplier</span>()</div>
+<div class="block">Checks whether the global multiplier is set.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>whether the global multiplier is set.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -273,6 +333,13 @@ loadScripts(document, 'script');</script>
 <h3>getPermissionMultiplier</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="../object/PermissionMultiplier.html" title="class in com.vk2gpz.autosell.object">PermissionMultiplier</a></span>&nbsp;<span class="element-name">getPermissionMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;p)</span></div>
+<div class="block">Checks whether the player has a permission-based multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>p</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>true if the player has a permission-based multiplier, false otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -281,6 +348,14 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="../object/AreaMultiplier.html" title="class in com.vk2gpz.autosell.object">AreaMultiplier</a></span>&nbsp;<span class="element-name">getAreaMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;p,
  <a href="../object/Shop.html" title="class in com.vk2gpz.autosell.object">Shop</a>&nbsp;s)</span></div>
+<div class="block">Checks whether the player has an area-based multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>p</code> - The player to check.</dd>
+<dd><code>s</code> - The shop to check.</dd>
+<dt>Returns:</dt>
+<dd>the area multiplier if found, null otherwise.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -288,18 +363,29 @@ loadScripts(document, 'script');</script>
 <h3>getMultipliers</h3>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&gt;</span>&nbsp;<span class="element-name">getMultipliers</span>()</div>
+<div class="block">Gets a list of multipliers for all players.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>a list of multipliers for all players.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="resetAllMultipliers()">
 <h3>resetAllMultipliers</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">resetAllMultipliers</span>()</div>
+<div class="block">Resets all multipliers.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="addMultiplier(com.vk2gpz.autosell.object.Multiplier)">
 <h3>addMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addMultiplier</span><wbr><span class="parameters">(<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&nbsp;m)</span></div>
+<div class="block">Adds a new multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>m</code> - the new multiplier to add.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -307,6 +393,13 @@ loadScripts(document, 'script');</script>
 <h3>getMultiplier</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></span>&nbsp;<span class="element-name">getMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;p)</span></div>
+<div class="block">Gets a multiplier for a player.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>p</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>The multiplier for the player, or null if not found.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -316,6 +409,13 @@ loadScripts(document, 'script');</script>
 @Nullable
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></span>&nbsp;<span class="element-name">getMultiplier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;playerName)</span></div>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Gets a multiplier for a player by their name.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>playerName</code> - The name of the player to check.</dd>
+<dt>Returns:</dt>
+<dd>The multiplier for the player, or null if not found.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -323,12 +423,24 @@ loadScripts(document, 'script');</script>
 <h3>getMultiplierByUuid</h3>
 <div class="member-signature"><span class="annotations">@Nullable
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></span>&nbsp;<span class="element-name">getMultiplierByUuid</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid)</span></div>
+<div class="block">Gets a multiplier for a player by their UUID.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - The UUID of the player to check.</dd>
+<dt>Returns:</dt>
+<dd>The multiplier for the player, or null if not found.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeMultiplierByUuid(java.lang.String)">
 <h3>removeMultiplierByUuid</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeMultiplierByUuid</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;uuid)</span></div>
+<div class="block">Removes a multiplier for a player by their UUID.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>uuid</code> - The UUID of the player to remove the multiplier for.</dd>
+</dl>
 </section>
 </li>
 <li>
@@ -337,60 +449,108 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeMultiplier</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;playerName)</span></div>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
+<div class="block">Removes a multiplier for a player by their name.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>playerName</code> - The name of the player to remove the multiplier for.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="removeMultiplier(org.bukkit.entity.Player)">
 <h3>removeMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">removeMultiplier</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;p)</span></div>
+<div class="block">Removes a multiplier for a player.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>p</code> - The player to remove the multiplier for.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getGlobalMultiplier()">
 <h3>getGlobalMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a></span>&nbsp;<span class="element-name">getGlobalMultiplier</span>()</div>
+<div class="block">Gets the global multiplier.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The global multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setGlobalMultiplier(com.vk2gpz.autosell.object.Multiplier)">
 <h3>setGlobalMultiplier</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setGlobalMultiplier</span><wbr><span class="parameters">(<a href="../object/Multiplier.html" title="class in com.vk2gpz.autosell.object">Multiplier</a>&nbsp;globalMultiplier)</span></div>
+<div class="block">Sets the global multiplier.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>globalMultiplier</code> - The new global multiplier.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getLimits()">
 <h3>getLimits</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>,<wbr><a href="../object/MultiplierLimit.html" title="class in com.vk2gpz.autosell.object">MultiplierLimit</a>&gt;</span>&nbsp;<span class="element-name">getLimits</span>()</div>
+<div class="block">Gets the map of multiplier limits.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the map of multiplier limits.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="addLimit(com.vk2gpz.autosell.object.MultiplierLimit)">
 <h3>addLimit</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">addLimit</span><wbr><span class="parameters">(<a href="../object/MultiplierLimit.html" title="class in com.vk2gpz.autosell.object">MultiplierLimit</a>&nbsp;limit)</span></div>
+<div class="block">Adds a multiplier limit.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>limit</code> - The multiplier limit to add.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="clearLimits()">
 <h3>clearLimits</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">clearLimits</span>()</div>
+<div class="block">Clears the limits.</div>
 </section>
 </li>
 <li>
 <section class="detail" id="getLimit(org.bukkit.entity.Player)">
 <h3>getLimit</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getLimit</span><wbr><span class="parameters">(org.bukkit.entity.Player&nbsp;p)</span></div>
+<div class="block">Gets the limit for a player.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>p</code> - The player to check.</dd>
+<dt>Returns:</dt>
+<dd>The limit for the player.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getDefaultLimit()">
 <h3>getDefaultLimit</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">double</span>&nbsp;<span class="element-name">getDefaultLimit</span>()</div>
+<div class="block">Gets the default limit for multipliers.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The default limit for multipliers.</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="setDefaultLimit(double)">
 <h3>setDefaultLimit</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setDefaultLimit</span><wbr><span class="parameters">(double&nbsp;limit)</span></div>
+<div class="block">Sets the default limit for multipliers.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>limit</code> - The new default limit for multipliers.</dd>
+</dl>
 </section>
 </li>
 </ul>

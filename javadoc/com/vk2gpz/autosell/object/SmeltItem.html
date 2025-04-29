@@ -92,6 +92,9 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">SmeltItem</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
+<div class="block">This class represents an item that can be smelted in the AutoSell plugin.
+ It contains the material type, data value for the item to be broken,
+ and the material type and data value for the item to be returned.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -107,7 +110,9 @@ loadScripts(document, 'script');</script>
  int&nbsp;breakData,
  org.bukkit.Material&nbsp;returnMaterial,
  int&nbsp;returnData)</code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-last even-row-color">
+<div class="block">Constructor to initialize the SmeltItem object with material types and data values.</div>
+</div>
 </div>
 </section>
 </li>
@@ -170,6 +175,14 @@ loadScripts(document, 'script');</script>
  int&nbsp;breakData,
  org.bukkit.Material&nbsp;returnMaterial,
  int&nbsp;returnData)</span></div>
+<div class="block">Constructor to initialize the SmeltItem object with material types and data values.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>breakMaterial</code> - The material type of the item to be broken.</dd>
+<dd><code>breakData</code> - The data value of the item to be broken.</dd>
+<dd><code>returnMaterial</code> - The material type of the item to be returned.</dd>
+<dd><code>returnData</code> - The data value of the item to be returned.</dd>
+</dl>
 </section>
 </li>
 </ul>
